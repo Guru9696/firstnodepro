@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>JavaScript Form Validation using a sample Employee registration form</title>
+<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />
+<meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />
+<link rel='stylesheet' href='emp1.css' type='text/css' />
+<script src="emp1.js">
+</script>
+</head>
+<body onload="document.registration.userid.focus();"bgcolor="orange">
+<h1>Employee Registration Form</h1>
+<form name='registration' onSubmit="return formValidation();">
+<ul>
+<li><label for="first">First Name:</label></li>
+<li><input type="text" name="first" size="50" required/></li>
+<li><label for="last">Last Name:</label></li>
+<li><input type="text" name="last" size="50" required/></li>
+<li><label for="empid">Employee id:</label></li>
+<li><input type="text"name="empid" size="50"required/></li>
+<li><label for="birth">Birth of date:</label></li>
+<li><input type="date" id="birth" name="birth" ></li>
+<li><label for="address">Address:</label></li>
+<li><input type="text" name="address" id=""size="50" required/></li>
+<li><label for="country">Country:</label></li>
+<li><select name="country" required>
+<option selected="" value="Default">(Please select a country)</option>
+<option value="AF">Australia</option>
+<option value="AL">Canada</option>
+<option value="DZ">India</option>
+<option value="AS">Russia</option>
+<option value="AD">USA</option>
+</select></li>
+<li><label for="no">Contact no:</label></li>
+<li><input type="number" id="" name="no" required></li>
+<li><label for="jdate">Date of joining:</label></li>
+<li><input type="date" id="" name="jdate" ></li>
+<li><label for="email">Email:</label></li>
+<li><input type="text" name="email" size="50" required/></li>
+<li><label id="gender">Gender:</label></li>
+<li><input type="radio" name="male" value="Male" /><span>Male</span></li>
+<li><input type="radio" name="female" value="Female" /><span>Female</span></li>
+
+<li><input type="submit" name="submit" value="Submit" /></li>
+</ul>
+</form>
+</body>
+</html>

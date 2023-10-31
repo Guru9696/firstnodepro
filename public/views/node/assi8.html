@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <link rel = "stylesheet" href="assi8_9_10_11.css">
+  <title> My Form </title>
+</head>
+
+<body>
+    <header>
+      <h1> Database creation</h1>
+    </header>
+
+
+    <form action="/createdb" method="POST">
+        <fieldset>
+          <h3>create new Database</h3>
+          <label>Database Name</label>
+          <input type="text" id="data" name="databaseName" required>
+          <br><br>
+          <button type ="reset">Reset</button>
+          <button type ="submit">Submit</button>
+          <br><br><br>
+        </fieldset>
+       </form>
+
+       <form action="/createtable" method="POST">
+        <fieldset>
+          <h3>Create new Table </h3>
+          <label>Database Name</label>
+          <input type ="text" id = 'data' name="databaseName" required>
+          <br><br>
+          <label>Table Name</label>
+          <input type="text" id = "name" name="tableName" required>
+          <br><br>
+          <button type ="reset">Reset</button>
+          <button type ="submit">Submit</button>
+        </fieldset>
+      </form>
+
+       <form action="/alltable" method="POST">
+        <fieldset>
+          <h3>Display All Table</h3>
+          <label>Database Name</label>
+          <input type ="text" id = 'data' name="databaseName" required>
+          <br><br>
+          
+          <button type ="reset">Reset</button>
+          <button type ="submit">Submit</button>
+        </fieldset>
+       </form>
+       
+       <form action="/alldatabase" method="POST">
+        <fieldset>
+          <h3>Display All Database</h3>
+          
+          <button type ="submit">Submit</button>
+          <br><br><br>
+        </fieldset>
+       </form>
+
+       <footer>
+        <hr>
+        <!-- <h4>Please enter 'http://localhost:8001/close' to close the   database connection before closing this window</h4> -->
+      </footer>
+    </body>
+  </html>

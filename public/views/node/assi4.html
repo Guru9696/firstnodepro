@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>UpperCase</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="assi5.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<form name="input" onsubmit="return formValidation(this);">
+<div class="container">
+  <div class="input-group1">
+    <label class="input-group__label" for="myInput">Enter String :</label>
+    <input type="text" id="myInput" name="fname" class="input-group__input" value="" required/>
+  </div>
+  
+  <button class="button-64" type="submit" name="submit" value="Submit" role="button"><span class="text">Submit</span></button>
+
+</div>
+<!-- partial -->
+  <!-- HTML !-->
+
+</form>
+<script>
+
+
+
+  function formValidation(input) {
+      
+      var fname = input.fname.value;
+      fname1=fname.toUpperCase();     
+      alert(fname1)
+          return fname1;
+  }
+  
+  
+  
+  </script>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <link rel = "stylesheet" href="assi8_9_10_11.css">
+  <title> My Form </title>
+</head>
+
+<body>
+    <header>
+      <h1>Student Database</h1>
+    </header>
+    <form action="/addstudent" method="POST">
+      <fieldset>
+        <h3>Add new Student</h3>
+        <label>Student Name</label>
+        <input type ="text" id = 'empID' name="name" required>
+        <br><br>
+        <label>Address </label>
+        <input type="text" id = "name" name="address" required>
+        <br><br>
+        <button type ="reset">Reset</button>
+        <button type ="submit">Submit</button>
+      </fieldset>
+    </form>
+
+    <form action="/viewstudent" method="POST">
+        <fieldset>
+          <h3>View an Student</h3>
+
+          <br><br>
+         
+          <button type ="submit">View All</button>
+          <br><br><br>
+        </fieldset>
+       </form>
+
+       <form action="/addmultistudent" method="POST">
+        <fieldset>
+          <h3>Add Multiple Student</h3>
+          <h5>Student 1</h5>
+          <label>Student Name</label>
+          <input type ="text" id = 'empID' name="name1" required>
+          <br><br>
+          <label>Address </label>
+          <input type="text" id = "name" name="address1" required>
+          <br><br>
+          <h5>Student 2</h5>
+          <label>Student Name</label>
+          <input type ="text" id = 'empID' name="name2" required>
+          <br><br>
+          <label>Address </label>
+          <input type="text" id = "name" name="address2" required>
+          <br><br>
+          <h5>Student 3</h5>
+          <label>Student Name</label>
+          <input type ="text" id = 'empID' name="name3" required>
+          <br><br>
+    
+          <label>Address </label>
+          <input type="text" id = "name" name="address3" required>
+          <br><br>
+          <h5>Student 4</h5>
+          <label>Student Name</label>
+          <input type ="text" id = 'empID' name="name4" required>
+          <br><br>
+          <label>Address </label>
+          <input type="text" id = "name" name="address4" required>
+          <br><br>
+          
+          <button type ="reset">Reset</button>
+          <button type ="submit">Add</button>
+        </fieldset>
+       </form>
+
+       <form action="/deletestudent" method="POST">
+        <fieldset>
+          <h3>Delete specific student</h3>
+          <label>Student Name</label>
+          <input type ="text" id = 'empID' name="name" required>
+          <br><br>
+          <button type ="reset">Reset</button>
+          <button type ="submit">Delete</button>
+          <br><br><br>
+        </fieldset>
+       </form>
+
+
+       <footer>
+        <hr>
+        <!-- <h4>Please enter 'http://localhost:8001/close' to close the   database connection before closing this window</h4> -->
+      </footer>
+    </body>
+  </html>

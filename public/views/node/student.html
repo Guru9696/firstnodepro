@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>JavaScript Form Validation using a sample Employee registration form</title>
+<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />
+<meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />
+<link rel='stylesheet' href='student.css' type='text/css' />
+<script src="student.js">
+</script>
+</head>
+<body >
+<h1>student Registration Form</h1>
+<form name='registration' onsubmit="return formValidation(this);">
+<ul>
+<li><label for="first">First Name:</label></li>
+<li><input type="text" name="first" id="fname"size="50" required/></li>
+<li><label for="last">Last Name:</label></li>
+<li><input type="text" name="last" id="lname"size="50" required/></li>
+
+<li><label for="birth">Birth of date:</label></li>
+<li><input type="date" id="birth" name="birth" required></li>
+
+<li><button type="submit" name="submit" value="Submit" onclick="formValidation(this)">submit</button></li>
+</ul>
+</form>
+</body>
+</html>

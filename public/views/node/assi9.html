@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <link rel = "stylesheet" href="assi8_9_10_11.css">
+  <title> My Form </title>
+</head>
+
+<body>
+    <header>
+      <h1>Customer Database</h1>
+    </header>
+    <form action="/add" method="POST">
+      <fieldset>
+        <h3>Add new customer</h3>
+        <label>Customer ID</label>
+        <input type ="text" id = 'empID' name="id" required>
+        <br><br>
+        <label>Customer Name</label>
+        <input type="text" id = "name" name="name" required>
+        <br><br>
+        <button type ="reset">Reset</button>
+        <button type ="submit">Submit</button>
+      </fieldset>
+    </form>
+
+    <form action="/view" method="POST">
+        <fieldset>
+          <h3>View all Customers</h3>
+      
+          <button type ="submit">View All</button>
+          <br><br><br>
+        </fieldset>
+       </form>
+
+           <form action="/view1" method="POST">
+        <fieldset>
+          <h3>View specified Customers</h3>
+          <label>Customer Name</label>
+          <input type="text" id="name" name="name" required>
+          <br><br>
+          <button type ="reset">Reset</button>
+          <button type ="submit">Submit</button>
+          <br><br><br>
+        </fieldset>
+       </form>
+
+       
+
+  
+
+       <footer>
+        <hr>
+        <!-- <h4>Please enter 'http://localhost:8001/close' to close the   database connection before closing this window</h4> -->
+      </footer>
+    </body>
+  </html>
